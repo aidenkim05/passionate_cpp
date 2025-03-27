@@ -1,7 +1,7 @@
-//À±¼º¿ì Àú ¿­Ç÷°­ÀÇ C++ ÇÁ·Î±×·¡¹Ö °³Á¤ÆÇ
-//Chapter 01. C¾ğ¾î ±â¹İÀÇ C++ 1
+//ìœ¤ì„±ìš° ì € ì—´í˜ˆê°•ì˜ C++ í”„ë¡œê·¸ë˜ë° ê°œì •íŒ
+//Chapter 01. Cì–¸ì–´ ê¸°ë°˜ì˜ C++ 1
 
-//Chapter 01-1. printf¿Í scanf¸¦ ´ë½ÅÇÏ´Â ÀÔÃâ·Â ¹æ½Ä
+//Chapter 01-1. printfì™€ scanfë¥¼ ëŒ€ì‹ í•˜ëŠ” ì…ì¶œë ¥ ë°©ì‹
 /*#include <iostream>
 int main(void) {
 	int num = 20;
@@ -16,13 +16,13 @@ int main(void) {
 
 int main(void) {
 	int val1;
-	std::cout << "Ã¹ ¹øÂ° ¼ıÀÚ ÀÔ·Â: ";
+	std::cout << "ì²« ë²ˆì§¸ ìˆ«ì ì…ë ¥: ";
 	std::cin >> val1;
 	int val2;
-	std::cout << "µÎ ¹øÂ° ¼ıÀÚ ÀÔ·Â: ";
+	std::cout << "ë‘ ë²ˆì§¸ ìˆ«ì ì…ë ¥: ";
 	std::cin >> val2;
 	int result = val1 + val2;
-	std::cout << "µ¡¼À °á°ú : " << result << std::endl;
+	std::cout << "ë§ì…ˆ ê²°ê³¼ : " << result << std::endl;
 	return 0;
 }*/
 
@@ -31,7 +31,7 @@ int main(void) {
 int main(void) {
 	int val1, val2;
 	int result = 0;
-	std::cout << "µÎ °³ÀÇ ¼ıÀÚ¸¦ ÀÔ·Â >> ";
+	std::cout << "ë‘ ê°œì˜ ìˆ«ìë¥¼ ì…ë ¥ >> ";
 	std::cin >> val1 >> val2;
 	if (val1 < val2) {
 		for (int i = val1 + 1; i < val2; i++)
@@ -41,7 +41,7 @@ int main(void) {
 		for (int i = val2 + 1; i < val1; i++)
 			result += i;
 	}
-	std::cout << "µÎ ¼ö »çÀÌÀÇ Á¤¼öÀÇ ÇÕ: " << result << std::endl;
+	std::cout << "ë‘ ìˆ˜ ì‚¬ì´ì˜ ì •ìˆ˜ì˜ í•©: " << result << std::endl;
 	return 0;
 }*/
 
@@ -49,16 +49,16 @@ int main(void) {
 int main(void) {
 	char name[100];
 	char lang[200];
-	std::cout << "ÀÌ¸§ ÀÔ·ÂÇÏ½Ã¿À >> ";
+	std::cout << "ì´ë¦„ ì…ë ¥í•˜ì‹œì˜¤ >> ";
 	std::cin >> name;
-	std::cout << "ÁÁ¾ÆÇÏ´Â ÇÁ·Î±×·¡¹Ö ¾ğ¾î¸¦ ÀÔ·ÂÇÏ½Ã¿À >> ";
+	std::cout << "ì¢‹ì•„í•˜ëŠ” í”„ë¡œê·¸ë˜ë° ì–¸ì–´ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ >> ";
 	std::cin >> lang;
-	std::cout << "ÀÌ¸§Àº " << name << "ÀÔ´Ï´Ù.\n";
-	std::cout << "ÁÁ¾ÆÇÏ´Â ¾ğ¾î´Â " << lang << "ÀÔ´Ï´Ù." << std::endl;
+	std::cout << "ì´ë¦„ì€ " << name << "ì…ë‹ˆë‹¤.\n";
+	std::cout << "ì¢‹ì•„í•˜ëŠ” ì–¸ì–´ëŠ” " << lang << "ì…ë‹ˆë‹¤." << std::endl;
 	return 0;
 }*/
 
-//Chapter 01-2. ÇÔ¼öÀÇ ¿À¹ö·Îµù(Function Overloading)
+//Chapter 01-2. í•¨ìˆ˜ì˜ ì˜¤ë²„ë¡œë”©(Function Overloading)
 /*#include<iostream>
 int MyFunc(int num) {
 	num++;
@@ -74,7 +74,7 @@ int main(void)
 	return 0;
 }*/
 
-//Chapter 01-3. ¸Å°³º¯¼öÀÇ µğÆúÆ® °ª
+//Chapter 01-3. ë§¤ê°œë³€ìˆ˜ì˜ ë””í´íŠ¸ ê°’
 /*#include<iostream>
 int Adder(int num1 = 1, int num2 = 2);
 
@@ -88,7 +88,7 @@ int Adder(int num1, int num2) {
 	return num1 + num2;
 }*/
 
-//Chapter 01-4. ÀÎ¶óÀÎ(inline) ÇÔ¼ö
+//Chapter 01-4. ì¸ë¼ì¸(inline) í•¨ìˆ˜
 /*#include<iostream>
 inline int SQUARE(int x) {
 	return x * x;
@@ -100,7 +100,7 @@ int main(void) {
 	return 0;
 }*/
 
-//Chapter 01-5. ÀÌ¸§°ø°£¿¡ ´ëÇÑ ¼Ò°³
+//Chapter 01-5. ì´ë¦„ê³µê°„ì— ëŒ€í•œ ì†Œê°œ
 
 
 
@@ -119,16 +119,16 @@ double Circle::getArea() {
 int main() {
 	Circle donut;
 	Circle pizza(30);
-	// °´Ã¼ ÀÌ¸§À¸·Î ¸â¹ö Á¢±Ù
+	// ê°ì²´ ì´ë¦„ìœ¼ë¡œ ë©¤ë²„ ì ‘ê·¼
 	cout << donut.getArea() << endl;
-	// °´Ã¼ Æ÷ÀÎÅÍ·Î ¸â¹ö Á¢±Ù
+	// ê°ì²´ í¬ì¸í„°ë¡œ ë©¤ë²„ ì ‘ê·¼
 	Circle* p;
 	p = &donut;
-	cout << p->getArea() << endl; // donutÀÇ getArea() È£Ãâ
-	cout << (*p).getArea() << endl; // donutÀÇ getArea() È£Ãâ
+	cout << p->getArea() << endl; // donutì˜ getArea() í˜¸ì¶œ
+	cout << (*p).getArea() << endl; // donutì˜ getArea() í˜¸ì¶œ
 	p = &pizza;
-	cout << p->getArea() << endl; // pizzaÀÇ getArea() È£Ãâ
-	cout << (*p).getArea() << endl; // pizzaÀÇ getArea() È£Ãâ
+	cout << p->getArea() << endl; // pizzaì˜ getArea() í˜¸ì¶œ
+	cout << (*p).getArea() << endl; // pizzaì˜ getArea() í˜¸ì¶œ
 }*/
 
 #include <iostream>
@@ -152,9 +152,9 @@ int main() {
 	circles[1][0].setRadius(4);
 	circles[1][1].setRadius(5);
 	circles[1][2].setRadius(6);
-	for (int i = 0; i < 2; i++) // ¹è¿­ÀÇ °¢ ¿ø¼Ò °´Ã¼ÀÇ ¸â¹ö Á¢±Ù
+	for (int i = 0; i < 2; i++) // ë°°ì—´ì˜ ê° ì›ì†Œ ê°ì²´ì˜ ë©¤ë²„ ì ‘ê·¼
 		for (int j = 0; j < 3; j++) {
-			cout << "Circle [" << i << "," << j << "]ÀÇ ¸éÀûÀº ";
+			cout << "Circle [" << i << "," << j << "]ì˜ ë©´ì ì€ ";
 			cout << circles[i][j].getArea() << endl;
 		}
 }
